@@ -1,22 +1,37 @@
 <header class="main-header">
     <div class="div-header">
-        <img src="/assets/logo.png" alt="logo">
+        <!-- <img src="/assets/logo.png" alt="logo">
         <h1 style="color:green; font-size: 30px;  position: relative;
-     right:100px; top: 30px;">.Org</h1>
+     right:100px; top: 30px;">.Org</h1> -->
+     <h1
+      style="
+        font-size: 3rem;
+        font-weight: bolder;
+        position: relative;
+        bottom: -24px;
+        font-family: 'Righteous', cursive;
+        position: relative;
+        left: -24px;
+        color: #ffffff;
+      "
+      class="piedtext"
+    >
+      <span style="color: #388d3c; font-size: 3rem">Code-</span>Academy
+    </h1>
         <ul>
-            <li><a routerLink='/dashboard/home'>HOME</a></li>
+            <li><a routerLink='/dashboard/home'>ホーム</a></li>
             <li>
-                <a routerLink="/dashboard/pdf">PDF RESOURCE</a>
+                <a routerLink="/dashboard/pdf">PDFリソース</a>
             </li>
-            <li><a routerLink="/dashboard/code-section">EDUCTION</a></li>
+            <li><a routerLink="/dashboard/code-section">教育</a></li>
             <li>
-                <a routerLink="/dashboard/about">ABOUT</a>
+                <a routerLink="/dashboard/about">およそ</a>
             </li>
-            <li style="margin-left: 20px;"><button type="button" class="btn btn-outline-success" (click)="authService.SignOut()">Sign-Out</button></li>
-            <button type="button" class="btn btn-primary btn-lg" style="margin-left:50px;" routerLink="/dashboard/shopnavbar">PiedPiper-Shop Ver 0.1
-                Beta
+            <li style="margin-left: 20px;"><button type="button" class="btn btn-outline-success" (click)="authService.SignOut()">サインアウト</button></li>
+            <button type="button" class="btn btn-primary btn-lg" style="margin-left:50px;" routerLink="/dashboard/shopnavbar">コースショップ
+            
             </button>
-            <button class="btn btn-dark btn-lg" routerLink="/dashboard/profile" style="position:relative; left:30px;">User Data</button>
+            <button class="btn btn-dark btn-lg" routerLink="/dashboard/profile" style="position:relative; left:30px;">プロフィール</button>
         </ul>
 
 

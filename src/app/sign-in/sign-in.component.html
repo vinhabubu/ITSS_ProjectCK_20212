@@ -1,53 +1,104 @@
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
-    <div class="container">
-        <a class="navbar-brand js-scroll-trigger ml-0 mr-auto" href="#page-top"><img src="assets/logo.png" alt="alphaLogo"></a>
-        <div class="collapse navbar-collapse">
-            <ul class="navbar-nav ml-auto mr-0">
-                <li class="nav-item">
-                    <a class="nav-link" routerLink="/register-user" [routerLinkActive]="['active']" fragment="form">Sign Up</a>
-                </li>
-            </ul>
-        </div>
+  <div class="container">
+    <!-- <a class="navbar-brand js-scroll-trigger ml-0 mr-auto" href="#page-top"><img src="assets/logo.png" alt="alphaLogo"></a> -->
+    <h1
+      style="
+        font-size: 3rem;
+        font-weight: bolder;
+        position: relative;
+        bottom: -8px;
+        font-family: 'Righteous', cursive;
+        position: relative;
+        left: 0px;
+        color: #ffffff;
+      "
+      class="piedtext"
+    >
+      <span style="color: #388d3c; font-size: 3rem">Code-</span>Academy
+    </h1>
+    <!-- <h1>Vinh</h1> -->
+    <div class="collapse navbar-collapse">
+      <ul class="navbar-nav ml-auto mr-0">
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            routerLink="/register-user"
+            [routerLinkActive]="['active']"
+            fragment="form"
+            >サインアップ</a
+          >
+        </li>
+      </ul>
     </div>
+  </div>
 </nav>
 <form class="container container-fluid shadow-lg">
-    <h2>Sign In</h2>
+  <h2>ログイン</h2>
 
-    <div class="form-group">
-        <input type="email" class="form-control" placeholder="Email Address" #userName required autocomplete="off">
-    </div>
+  <div class="form-group">
+    <input
+      type="email"
+      class="form-control"
+      placeholder="メールアドレス"
+      #userName
+      required
+      autocomplete="off"
+    />
+  </div>
 
-    <div class="form-group">
-        <input type="password" class="form-control" placeholder="Password" #userPassword required autocomplete="off">
-    </div>
+  <div class="form-group">
+    <input
+      type="password"
+      class="form-control"
+      placeholder="パスワード"
+      #userPassword
+      required
+      autocomplete="off"
+    />
+  </div>
 
-    <!-- Calling SignIn Api from AuthService -->
-    <div class="form-group">
-        <button type="button" class="btn btn-primary form-control" (click)="authService.SignIn(userName.value, userPassword.value)">Sign In</button>
-    </div>
+  <!-- Calling SignIn Api from AuthService -->
+  <div class="form-group">
+    <button
+      type="button"
+      class="btn btn-primary form-control"
+      (click)="authService.SignIn(userName.value, userPassword.value)"
+    >
+    ログイン
+    </button>
+  </div>
 
-    <div class="form-group">
-        <span id="or"><span class="orInner">Or</span></span>
-    </div>
+  <div class="form-group">
+    <span id="or"><span class="orInner">または</span></span>
+  </div>
 
-    <!-- Calling GoogleAuth Api from AuthService -->
-    <div class="form-group">
-        <button type="button" class="btn googleBtn" (click)="authService.GoogleAuth()">
-                <i class="fab fa-google-plus-g"></i>
-                Log in with Google
-              </button>
-    </div>
+  <!-- Calling GoogleAuth Api from AuthService -->
+  <div class="form-group">
+    <button
+      type="button"
+      class="btn googleBtn"
+      (click)="authService.GoogleAuth()"
+    >
+      <i class="fab fa-google-plus-g"></i>
+      Googleでログインする
+    </button>
+  </div>
 
-
-    <div class="form-group">
-        <a routerLink="/forgot-password">Forgot Password?</a>
-    </div>
-    <div class="form-group">
-        <span>Don't have an account?<a class="redirect" routerLink="/register-user"> Sign Up</a></span>
-    </div>
+  <div class="form-group">
+    <a routerLink="/forgot-password">パスワードをお忘れ</a>
+  </div>
+  <div class="form-group">
+    <span
+      >アカウントがありません<a class="redirect" routerLink="/register-user">
+        サインアップ</a
+      ></span
+    >
+  </div>
 </form>
 <footer class="py-5 bg-dark fixed" id="footer">
-    <div class="container">
-        <p class="m-0 text-center text-white">Copyright &copy; eLearningSite 2020</p>
-    </div>
+  <div class="container">
+    <!-- <p class="m-0 text-center text-white">
+      Copyright &copy; eLearningSite 2020
+    </p> -->
+  </div>
 </footer>

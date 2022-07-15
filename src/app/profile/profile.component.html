@@ -4,15 +4,15 @@
             <img src="/assets/download.jfif" alt="logo">
             <br>
             <br>
-            <h1>Hello: <strong>{{(user.displayName) ? user.displayName : 'User'}}</strong></h1>
-            <p>User ID: <strong>{{user.uid}}</strong></p>
-            <p>Email: <strong>{{user.email}}</strong></p>
-            <p>Email Verified: <strong>{{user.emailVerified}}</strong></p>
+            <h1>おはよう: <strong>{{(user.displayName) ? user.displayName : 'User'}}</strong></h1>
+            <p>ユーザーID: <strong>{{user.uid}}</strong></p>
+            <p>メール: <strong>{{user.email}}</strong></p>
+            <p>メール確認済み: <strong>{{user.emailVerified}}</strong></p>
             <a class="nav-link" routerLink="/dashboard">
-                <i class="fas fa-user"></i>Go back to home
+                <i class="fas fa-user"></i>ホーム戻り
             </a>
             <a class="btn btn-dark" (click)="authService.SignOut()">
-                <i class="fas fa-sign-out-alt"></i>Log out
+                <i class="fas fa-sign-out-alt"></i>ログアウト
             </a>
         </div>
     </div>
